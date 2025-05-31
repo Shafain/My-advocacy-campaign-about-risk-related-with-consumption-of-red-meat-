@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protect Your Child's Future</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #43cea2, #185a9d);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0d3c61;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #a1ffea;
+    }
+
+
+
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      
+    }
+    
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+    .section:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .section h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+    }
+    .btn {
+      background-color: #2e7d32;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #388e3c;
+    }
+    .blog-article, .recipe, .resource, .story {
+      margin-bottom: 30px;
+      border-left: 5px solid #a5d6a7;
+      padding-left: 15px;
+      transition: transform 0.3s;
+    }
+    .blog-article:hover, .recipe:hover, .resource:hover, .story:hover {
+      transform: translateY(-5px);
+    }
+     @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes slideInTop {
+      from {opacity: 0; transform: translateY(-50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes zoomIn {
+      from {opacity: 0; transform: scale(0.8);}
+      to {opacity: 1; transform: scale(1);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .downloads button {
+      display: inline-block;
+      margin: 15px 10px;
+      background: linear-gradient(to right, #43cea2, #185a9d);
+      color: white;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .downloads button:hover {
+      background: linear-gradient(to right, #226b54, #0e365d);
+    }
+
+
+
+    .story {
+      margin-bottom: 20px;
+      background-color: #f0f8ff;
+      padding: 20px;
+      border-left: 5px solid #43cea2;
+      border-radius: 6px;
+    }
+    .video-section {
+      text-align: center;
+      margin-top: 30px;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .video-section iframe {
+      width: 90%;
+      max-width: 700px;
+      height: 390px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .social-buttons {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+    .social-buttons  {
+      background-color: #c13584;
+      padding: 10px 20px;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Protect Your Child's Future</h1>
+  </header>
+  
+  <div class="nav-container">
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="#crisis">Crisis</a>
+      <a href="#research">Research</a>
+      <a href="#solution">Solution</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#stories">Stories</a>
+      <a href="#connect">Follow Us</a>
+    </div>
+  </div>
+
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const links = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('active');
+    toggle.classList.toggle('open');
+  });
+  </script>
+
+
+  <section class="video-section">
+    <h2>Watch & Learn</h2>
+    <iframe src="https://www.youtube.com/embed/4TND6UIB6ng?si=KwSARJeQmKUIYz_q" title="YouTube video player" allowfullscreen></iframe>
+  </section>
+    
+  
+  <section class="section" id="crisis">
+    <h2>The Crisis</h2>
+    
+      <div class="story">Type 2 diabetes is increasing among children due to dietary patterns rich in red and processed meats. These foods, high in saturated fats and additives, contribute to insulin resistance and obesity. It's time to rethink what we feed our children.</div>
+    
+  </section>
+  <section class="section bg-light" id="research">
+    <div class="container">
+      <h2 class="text-success mb-4">Red Meat & Diabetes Risk</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow-sm rounded">
+            <p><strong>Did you know?</strong></p>
+            <p>Just <strong>50g of processed meat daily</strong> increases the risk of Type 2 Diabetes by <strong>15%</strong>. These meats are high in saturated fats and harmful chemicals.</p>
+            <ul class="list-unstyled mt-3">
+              <li>🍔 Saturated fat promotes insulin resistance</li>
+              <li>🥩 Heme iron causes oxidative stress</li>
+              <li>🔥 High-heat cooking creates AGEs (inflammatory compounds)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <canvas id="meatChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="solution">
+    <h2>The Solution</h2>
+    
+      <p class="story">Cellular agriculture allows us to grow meat without the health risks. By customizing fat content and eliminating harmful additives, we can make food that tastes good and keeps kids healthy.</p>
+    
+  </section>
+  <section class="section" id="downloads">
+    <h2>Download Free Guides</h2>
+    <div class="downloads">
+      <p class="story"><strong>📘 Preventing Diabetes in Kids – CDC Parent Guide</strong></p>
+      <a href="https://www.cdc.gov/nccdphp/dnpao/state-local-programs/pdf/PreventingType2DiabetesChildren.pdf" download target="_blank"><button>Download PDF</button></a>
+      <p class="story"><strong>🥩 Red Meat and Health – World Cancer Research Fund</strong></p>
+      <a href="https://www.wcrf.org/sites/default/files/Eat-smart-and-stay-healthy-brochure.pdf" download target="_blank"><button>Download PDF</button></a>
+      <p class="story"><strong>🌱 Cultivated Meat Explained – GFI</strong></p>
+      <a href="https://gfi.org/wp-content/uploads/2021/03/CultivatedMeatPrimer_GFI.pdf" download target="_blank"><button>Download PDF</button></a>
+      <p class="story"><strong>📊 Understanding Type 2 Diabetes – ADA Factsheet</strong></p>
+      <a href="https://diabetes.org/sites/default/files/2021-06/Type%202%20Diabetes%20Facts%20Sheet_0.pdf" download target="_blank"><button>Download PDF</button></a>
+    </div>
+  </section>
+  <section class="section" id="stories">
+    <h2>Real Stories from the Community</h2>
+    <div class="story">"I started making small swaps like lentils for beef and saw big changes. My son's sugar levels dropped." – <a href="https://diabetes.org/community/personal-stories" target="_blank">Karen M. (ADA)</a></div>
+    <div class="story">"Switching to a plant-based diet helped me lower my insulin use." – <a href="https://beyondtype1.org/plant-based-eating-type-1/" target="_blank">Natalie (Beyond Type 1)</a></div>
+    <div class="story">"When I cut out bacon and sausages, my son's energy and focus improved." – <a href="https://www.forksoverknives.com/success-stories/" target="_blank">Samantha R. (Forks Over Knives)</a></div>
+    <div class="story">"Going meat-free for a month turned into a new way of life for my family." – <a href="https://www.forksoverknives.com/success-stories/" target="_blank">Carlos L. (Forks Over Knives)</a></div>
+    <div class="story">"A nutritionist helped us swap out processed foods. The results were amazing!" – <a href="https://diabetes.org/community/personal-stories" target="_blank">Erin B. (ADA)</a></div>
+  </section>
+  
+
+  <section class="section" id="connect">
+    <h2>Follow Us on social media</h2>
+    
+    <a href="https://www.instagram.com" target="_blank" class="social-buttons">Follow Us on Instagram</a>
+  </section>
+
+  <script>
+    ScrollReveal().reveal('.section, .hero, .video-section', {
+      delay: 200,
+      distance: '40px',
+      origin: 'bottom',
+      reset: false
+    });
+    const ctx = document.getElementById('meatChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Processed Meat (50g)', 'Red Meat (100g)'],
+        datasets: [{
+          label: '% Increased Diabetes Risk',
+          data: [15, 10],
+          backgroundColor: ['#e57373', '#81c784']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Meat Consumption & Diabetes Risk'
+          }
+        }
+      }
+    });
+
+  </script>
+
+
+</body>
+</html>

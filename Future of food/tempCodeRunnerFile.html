@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protect Your Child's Future</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    nav {
+      background-color: #1b5e20;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 18px 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #c8e6c9;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1619531335820-6a3bb13c9407');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+    .section:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .section h2 {
+      color: #2e7d32;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #a5d6a7;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .chart-container {
+      width: 100%;
+      max-width: 700px;
+      margin: 40px auto;
+    }
+    .downloads button {
+      display: inline-block;
+      margin: 15px 10px;
+      background-color: #388e3c;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .downloads button:hover {
+      background-color: #2e7d32;
+    }
+    .social-buttons {
+      margin-top: 10px;
+    }
+    .social-buttons a {
+      display: inline-block;
+      background-color: #c13584;
+      color: white;
+      padding: 8px 14px;
+      margin: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .video-fixed iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 380px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero h1 {
+        font-size: 1.5em;
+        padding: 10px;
+      }
+      .section {
+        padding: 30px 15px;
+      }
+      nav a {
+        font-size: 0.95rem;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Protect Your Child's Future</h1>
+  </header>
+
+  <nav>
+    <a href="#crisis">Crisis</a>
+    <a href="#research">Research</a>
+    <a href="#solution">Solution</a>
+    <a href="#ethics">Ethics</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#stories">Stories</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Red Meat, Diabetes & A New Way Forward</h1>
+    <div class="video-fixed">
+      <iframe
+        src="https://www.youtube.com/embed/4TND6UIB6ng?si=KwSARJeQmKUIYz_q"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section class="section" id="crisis">
+    <h2>The Crisis</h2>
+    <div class="card">
+      <p>Type 2 diabetes is increasingly affecting children in the U.S., driven by high consumption of red and processed meats rich in saturated fat and additives. These foods contribute to insulin resistance and obesity—major risk factors for diabetes.</p>
+    </div>
+  </section>
+
+  <section class="section" id="research">
+    <h2>Key Findings</h2>
+    <div class="card">
+      <h3>Red Meat & Diabetes</h3>
+      <p>Studies link red meat consumption with a 10–15% higher risk of Type 2 diabetes. The damage comes from saturated fats, heme iron, nitrates, and high-heat cooking methods that create AGEs.</p>
+    </div>
+    <div class="chart-container">
+      <canvas id="meatChart"></canvas>
+    </div>
+  </section>
+
+  <section class="section" id="solution">
+    <h2>The Solution: Cellular Agriculture</h2>
+    <div class="card">
+      <p>Lab-grown meat offers a clean alternative. With lower saturated fat, no harmful preservatives, and familiar taste, it's a bridge between health and culture—ideal for school lunches and homes alike.</p>
+    </div>
+  </section>
+
+  <section class="section" id="ethics">
+    <h2>Ethics & Social Justice</h2>
+    <div class="card">
+      <p>Cultured meat reduces disease risk, avoids animal suffering, and supports sustainability. It's an ethical upgrade to the traditional food system—especially for vulnerable communities.</p>
+    </div>
+  </section>
+
+  <section class="section" id="downloads">
+    <h2>Download Free Guides</h2>
+    <div class="downloads">
+      <p><strong>📘 Preventing Diabetes in Kids – CDC Parent Guide</strong></p>
+      <a href="https://www.cdc.gov/nccdphp/dnpao/state-local-programs/pdf/PreventingType2DiabetesChildren.pdf" download><button>Download PDF</button></a>
+      <p><strong>🥩 Red Meat and Health – World Cancer Research Fund</strong></p>
+      <a href="https://www.wcrf.org/sites/default/files/Eat-smart-and-stay-healthy-brochure.pdf" download><button>Download PDF</button></a>
+      <p><strong>🌱 Cultivated Meat Explained – GFI</strong></p>
+      <a href="https://gfi.org/wp-content/uploads/2021/03/CultivatedMeatPrimer_GFI.pdf" download><button>Download PDF</button></a>
+      <p><strong>📊 Understanding Type 2 Diabetes – ADA Factsheet</strong></p>
+      <a href="https://diabetes.org/sites/default/files/2021-06/Type%202%20Diabetes%20Facts%20Sheet_0.pdf" download><button>Download PDF</button></a>
+    </div>
+  </section>
+
+  <section class="section" id="stories">
+    <h2>Real Stories</h2>
+    <div class="card">
+      <p>"After switching to plant-based meals, our son's energy improved and his blood sugar stabilized." – The Garcia Family</p>
+      <img src="https://images.unsplash.com/photo-1600185364945-09dbb4d93e4b" alt="happy family" style="width:100%; border-radius:12px; margin-top:10px;">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Connect With Us</h2>
+    <div class="social-buttons">
+      <a href="https://www.instagram.com/" target="_blank">Follow us on Instagram</a>
+    </div>
+  </section>
+
+  <script>
+    ScrollReveal().reveal('.section', { delay: 200, distance: '50px', origin: 'bottom' });
+    const ctx = document.getElementById('meatChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Processed Meat (50g)', 'Red Meat (100g)'],
+        datasets: [{
+          label: '% Increased Diabetes Risk',
+          data: [15, 10],
+          backgroundColor: ['#ef5350', '#ff8a65']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Meat Consumption vs. Diabetes Risk'
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
